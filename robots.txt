@@ -1,0 +1,42 @@
+# Robots.txt for Szystems Canada
+# https://szystems.com
+
+User-agent: *
+Allow: /
+
+# Main pages
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /portfolio.html
+
+# Disallow admin/config files
+Disallow: /config/
+Disallow: /forms/
+Disallow: /scripts/
+Disallow: /*.php$
+Disallow: /CREDENCIALES.md
+Disallow: /EMERGENCY_CHECKLIST.md
+Disallow: /README*.md
+Disallow: /REPORTE*.md
+Disallow: /.htaccess*
+
+# Disallow Spanish pages (not for Canada market)
+Disallow: /contacto.html
+Disallow: /nosotros.html
+Disallow: /portafolio.html
+Disallow: /paginasweb.html
+Disallow: /appsweb.html
+Disallow: /hostingydominio.html
+Disallow: /software.html
+
+# Disallow test files
+Disallow: /test-*.html
+Disallow: /diagnostico-*.php
+Disallow: /limpiar-*.php
+
+# Sitemap location
+Sitemap: https://szystems.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1

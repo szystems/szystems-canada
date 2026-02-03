@@ -1,0 +1,221 @@
+/* ============================================
+   FLOATING CONTACT BUTTON - Szystems Canada
+   ============================================ */
+
+#contact-toggle {
+  display: none;
+}
+
+.floating-contact {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Main button */
+.contact-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #0880e8 0%, #0665b7 100%);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(8, 128, 232, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.contact-main:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(8, 128, 232, 0.5);
+}
+
+.contact-main i {
+  font-size: 24px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.contact-main .bi-headset {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.contact-main .bi-x-lg {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+/* When opened */
+#contact-toggle:checked ~ .contact-main {
+  background: linear-gradient(135deg, #fa8403 0%, #e07402 100%);
+  box-shadow: 0 4px 20px rgba(250, 132, 3, 0.4);
+}
+
+#contact-toggle:checked ~ .contact-main .bi-headset {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+#contact-toggle:checked ~ .contact-main .bi-x-lg {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* Contact options */
+.contact-options {
+  position: absolute;
+  bottom: 70px;
+  right: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.5) translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.contact-btn i {
+  font-size: 20px;
+}
+
+.contact-btn:hover {
+  transform: scale(1.15) translateY(0) !important;
+}
+
+/* Individual button colors */
+.contact-btn.email {
+  background: linear-gradient(135deg, #ea4335 0%, #c5221f 100%);
+}
+
+.contact-btn.phone {
+  background: linear-gradient(135deg, #0880e8 0%, #0665b7 100%);
+}
+
+.contact-btn.linkedin {
+  background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
+}
+
+.contact-btn.whatsapp {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+}
+
+/* Show options when checked */
+#contact-toggle:checked ~ .contact-options .contact-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+}
+
+/* Stagger animation */
+#contact-toggle:checked ~ .contact-options .contact-btn:nth-child(1) {
+  transition-delay: 0.1s;
+}
+#contact-toggle:checked ~ .contact-options .contact-btn:nth-child(2) {
+  transition-delay: 0.15s;
+}
+#contact-toggle:checked ~ .contact-options .contact-btn:nth-child(3) {
+  transition-delay: 0.2s;
+}
+#contact-toggle:checked ~ .contact-options .contact-btn:nth-child(4) {
+  transition-delay: 0.25s;
+}
+
+/* Tooltip on hover */
+.contact-btn::before {
+  content: attr(title);
+  position: absolute;
+  right: 60px;
+  background: #333;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Pulse animation for main button */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(8, 128, 232, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(8, 128, 232, 0.6), 0 0 0 10px rgba(8, 128, 232, 0.1);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(8, 128, 232, 0.4);
+  }
+}
+
+.contact-main {
+  animation: pulse 2s infinite;
+}
+
+#contact-toggle:checked ~ .contact-main {
+  animation: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .floating-contact {
+    bottom: 80px;
+    right: 15px;
+  }
+  
+  .contact-main {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .contact-btn {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .contact-btn::before {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

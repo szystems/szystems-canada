@@ -1,0 +1,51 @@
+# .htaccess SEGURO para Szystems - Versión sin conflictos
+# Este archivo tiene configuración mínima para evitar errores 500
+
+# Habilitar motor de rewrite
+RewriteEngine On
+
+# Redirecciones básicas para proyectos Laravel
+RewriteRule ^flebocenter/?(.*)$ flebocenter/public/$1 [L,QSA]
+
+# Protección básica de archivos sensibles
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.env">
+    Order allow,deny  
+    Deny from all
+</Files>
+
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# GZIP Compression básico (solo si el servidor lo soporta)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+</IfModule>
+
+# Cache básico para archivos estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month" 
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+# Nota: Las reglas de HTTPS y headers de seguridad están comentadas
+# para evitar errores si el servidor no las soporta
+# Descomenta gradualmente si es necesario:
+
+# Redirección HTTPS (descomenta solo si tienes SSL)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

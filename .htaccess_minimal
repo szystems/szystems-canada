@@ -1,0 +1,12 @@
+# .htaccess ULTRA BÁSICO - Solo lo esencial
+# Para usar en caso de emergencia cuando todo falla
+
+RewriteEngine On
+
+# Solo la redirección más básica para flebocenter
+RewriteRule ^flebocenter/?(.*)$ flebocenter/public/$1 [L]
+
+# Protección mínima
+<Files ".htaccess">
+    deny from all
+</Files>
