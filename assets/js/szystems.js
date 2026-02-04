@@ -237,12 +237,21 @@
         handleScroll: function() {
             const scrolled = window.pageYOffset;
             const navbar = document.querySelector('#header');
+            const body = document.body;
+            const isMobile = window.innerWidth <= 768;
             
             if (navbar) {
                 if (scrolled > 100) {
                     navbar.classList.add('header-scrolled');
+                    // En móvil, ocultar topbar al hacer scroll
+                    if (isMobile) {
+                        body.classList.add('scrolled');
+                    }
                 } else {
                     navbar.classList.remove('header-scrolled');
+                    if (isMobile) {
+                        body.classList.remove('scrolled');
+                    }
                 }
             }
         },

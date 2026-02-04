@@ -1,6 +1,80 @@
 /* Szystems Canada Custom Styles */
 
 /* ============================================
+   MOBILE HEADER FIX - Evitar que se esconda
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Mantener el topbar visible y fijo */
+  #topbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9997 !important;
+    height: auto !important;
+  }
+  
+  /* Mantener el header siempre visible debajo del topbar */
+  #header {
+    position: fixed !important;
+    top: 44px !important; /* Altura del topbar */
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9996 !important;
+  }
+  
+  /* Ajustar el contenido para que no quede debajo del header */
+  #hero {
+    margin-top: 100px !important; /* topbar + header height */
+  }
+  
+  /* Ocultar topbar al hacer scroll en móvil para dar más espacio */
+  body.scrolled #topbar {
+    display: none !important;
+  }
+  
+  body.scrolled #header {
+    top: 0 !important;
+  }
+  
+  body.scrolled #hero {
+    margin-top: 60px !important;
+  }
+}
+
+/* ============================================
+   HERO SECTION FIX - Evitar superposición
+   ============================================ */
+
+/* Eliminar el margin negativo que causa superposición */
+#hero {
+  margin-bottom: 0 !important;
+}
+
+/* Asegurar que la siguiente sección tenga espacio */
+#why-us,
+.section-bg:first-of-type,
+#hero + section,
+#hero + * + section {
+  margin-top: 0 !important;
+  padding-top: 80px !important;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto !important;
+    min-height: 80vh !important;
+    padding-bottom: 60px !important;
+  }
+  
+  #why-us,
+  #hero + section {
+    padding-top: 60px !important;
+  }
+}
+
+/* ============================================
    ACCESSIBILITY - HIDE SKIP LINKS
    ============================================ */
 
