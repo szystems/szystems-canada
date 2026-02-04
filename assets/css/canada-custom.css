@@ -1,6 +1,25 @@
 /* Szystems Canada Custom Styles */
 
 /* ============================================
+   LOGO RESPONSIVE STYLES
+   ============================================ */
+
+/* Logo desktop - muestra el logo completo horizontal */
+#header .logo img {
+  max-height: 40px;
+  width: auto;
+}
+
+/* Logo mobile - muestra solo el favicon/icono cuadrado */
+@media (max-width: 768px) {
+  #header .logo img {
+    content: url('../img/favicon.png');
+    max-height: 35px;
+    width: auto;
+  }
+}
+
+/* ============================================
    TOP BAR STYLES
    ============================================ */
 #topbar {
