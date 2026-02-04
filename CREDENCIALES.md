@@ -26,6 +26,16 @@ Para habilitar reCAPTCHA v3:
 | Site Key (público) | `6LduDl8sAAAAACG7y56ebyGFOlYF8XFHPAdGEppt` |
 | Secret Key (privado) | `6LduDl8sAAAAAJ-eVEbzLXz-1xvFKqhxAaT1ylal` |
 
+---
+
+## Google Analytics 4
+
+| Tipo | Valor |
+|------|-------|
+| Measurement ID | `G-KVPQNLC9LC` |
+| Propiedad | Szystems Canada |
+| URL | https://analytics.google.com |
+
 ### Instrucciones para activar:
 
 1. En `forms/contact.php`, línea 17, reemplaza:
