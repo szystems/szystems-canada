@@ -1,6 +1,23 @@
 /* Szystems Canada Custom Styles */
 
 /* ============================================
+   ACCESSIBILITY - HIDE SKIP LINKS
+   ============================================ */
+
+/* Ocultar skip links y elementos de accesibilidad visuales */
+.skip-to-content,
+.skip-link,
+[href="#main-content"],
+[href="#contenido-principal"] {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+/* ============================================
    LOGO RESPONSIVE STYLES
    ============================================ */
 
