@@ -10,19 +10,21 @@
     display: none !important;
   }
   
-  /* Header fijo en la parte superior */
+  /* Header fijo con padding para no pegar al borde del navegador */
   #header {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     z-index: 9996 !important;
-    background: rgba(5, 87, 158, 0.95) !important;
+    background: rgba(5, 87, 158, 0.98) !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   
   /* Ajustar el hero para que no quede debajo del header */
   #hero {
-    padding-top: 70px !important;
+    padding-top: 80px !important;
   }
 }
 
