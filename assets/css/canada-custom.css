@@ -429,6 +429,36 @@
   margin-bottom: 0;
 }
 
+/* Trust Signals Section */
+.trust-signals {
+  padding: 40px 0;
+  background: #fff;
+}
+.trust-badge {
+  padding: 24px 16px;
+  transition: transform 0.2s ease;
+}
+.trust-badge:hover {
+  transform: translateY(-4px);
+}
+.trust-badge i {
+  font-size: 36px;
+  color: #0880e8;
+  margin-bottom: 12px;
+  display: block;
+}
+.trust-badge h5 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1f2b38;
+  margin-bottom: 6px;
+}
+.trust-badge p {
+  font-size: 13px;
+  color: #6c757d;
+  margin: 0;
+}
+
 /* Portal CTA button */
 .btn-portal-cta {
   display: inline-block;
