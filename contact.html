@@ -259,13 +259,24 @@
 
           <!-- Contact Form -->
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <!-- Portal Banner -->
+            <div class="portal-banner" style="background: linear-gradient(135deg, #032e54 0%, #0665b7 100%); border-radius: 12px; padding: 24px 30px; margin-bottom: 30px; color: #fff;">
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+                <div>
+                  <h4 style="margin: 0 0 6px; color: #f6b024; font-size: 18px;"><i class="bi bi-rocket-takeoff"></i> Looking to start a project?</h4>
+                  <p style="margin: 0; opacity: 0.9; font-size: 14px;">Use our Client Portal for project quotes — faster response, real-time tracking.</p>
+                </div>
+                <a href="https://portal.szystems.com/intake" class="btn-portal-cta" style="font-size: 15px; padding: 10px 24px; white-space: nowrap;">Start Your Project</a>
+              </div>
+            </div>
+
             <div class="contact-form-wrapper">
               <div class="form-header">
-                <h3>Get Your Free Quote</h3>
-                <p>Tell us about your project and we'll get back to you within 24 hours</p>
+                <h3>General Inquiry</h3>
+                <p>For questions, support, or anything else — we'll get back to you within 24 hours</p>
               </div>
               
-              <form action="forms/lead.php" method="post" role="form" class="php-email-form" data-recaptcha-site-key="6LduDl8sAAAAACG7y56ebyGFOlYF8XFHPAdGEppt">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-recaptcha-site-key="6LduDl8sAAAAACG7y56ebyGFOlYF8XFHPAdGEppt">
                 <input type="hidden" name="lead_source" value="contact-page">
                 <div class="row">
                   <div class="col-md-6 form-group">
@@ -278,74 +289,22 @@
                   </div>
                 </div>
 
-                <div class="row mt-3">
-                  <div class="col-md-6 form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="+1 (250) 000-0000">
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <label for="company">Company Name</label>
-                    <input type="text" class="form-control" name="company" id="company" placeholder="Your Company">
-                  </div>
-                </div>
-
                 <div class="form-group mt-3">
-                  <label for="service">Service Interested In *</label>
-                  <select class="form-control" name="service" id="service" required>
-                    <option value="">Select a service...</option>
-                    <option value="landing-page">Landing Page</option>
-                    <option value="basic-website">Basic Website</option>
-                    <option value="advanced-website">Advanced Website</option>
-                    <option value="basic-webapp">Basic Web Application</option>
-                    <option value="intermediate-webapp">Intermediate Web Application</option>
-                    <option value="advanced-webapp">Advanced Web Application</option>
+                  <label for="reason">Reason for Contact *</label>
+                  <select class="form-control" name="reason" id="reason" required>
+                    <option value="">Select a reason...</option>
                     <option value="maintenance">Maintenance & Support</option>
                     <option value="seo">SEO & Marketing</option>
                     <option value="hosting">Hosting & Domain</option>
-                    <option value="other">Other / Not Sure</option>
-                  </select>
-                </div>
-
-                <div class="form-group mt-3">
-                  <label for="budget">Estimated Budget</label>
-                  <select class="form-control" name="budget" id="budget">
-                    <option value="">Select your budget range...</option>
-                    <option value="under-1000">Under $1,000 USD</option>
-                    <option value="1000-2500">$1,000 - $2,500 USD</option>
-                    <option value="2500-5000">$2,500 - $5,000 USD</option>
-                    <option value="5000-10000">$5,000 - $10,000 USD</option>
-                    <option value="over-10000">Over $10,000 USD</option>
-                    <option value="not-sure">Not Sure Yet</option>
-                  </select>
-                </div>
-
-                <div class="form-group mt-3">
-                  <label for="message">Project Details *</label>
-                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="Please describe your project, goals, and any specific requirements..." required></textarea>
-                </div>
-
-                <div class="form-group mt-3">
-                  <label for="timeline">Preferred Timeline</label>
-                  <select class="form-control" name="timeline" id="timeline">
-                    <option value="">When do you need this completed?</option>
-                    <option value="asap">As soon as possible</option>
-                    <option value="1-month">Within 1 month</option>
-                    <option value="1-3-months">1-3 months</option>
-                    <option value="3-6-months">3-6 months</option>
-                    <option value="flexible">Flexible / No rush</option>
-                  </select>
-                </div>
-
-                <div class="form-group mt-3">
-                  <label for="referral">How did you hear about us?</label>
-                  <select class="form-control" name="referral" id="referral">
-                    <option value="">Select an option...</option>
-                    <option value="google">Google Search</option>
-                    <option value="linkedin">LinkedIn</option>
-                    <option value="referral">Friend/Colleague Referral</option>
-                    <option value="social-media">Social Media</option>
+                    <option value="billing">Billing Question</option>
+                    <option value="general">General Question</option>
                     <option value="other">Other</option>
                   </select>
+                </div>
+
+                <div class="form-group mt-3">
+                  <label for="message">Message *</label>
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="How can we help you?" required></textarea>
                 </div>
 
                 <!-- Honeypot field - hidden from humans, bots will fill it -->
