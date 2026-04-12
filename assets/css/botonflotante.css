@@ -118,6 +118,10 @@
   background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
 }
 
+.contact-btn.portal {
+  background: linear-gradient(135deg, #f6b024 0%, #e09800 100%);
+}
+
 /* Show options when checked */
 #contact-toggle:checked ~ .contact-options .contact-btn {
   opacity: 1;
@@ -137,6 +141,9 @@
 }
 #contact-toggle:checked ~ .contact-options .contact-btn:nth-child(4) {
   transition-delay: 0.25s;
+}
+#contact-toggle:checked ~ .contact-options .contact-btn:nth-child(5) {
+  transition-delay: 0.3s;
 }
 
 /* Tooltip on hover */
