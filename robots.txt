@@ -1,6 +1,6 @@
 # Robots.txt for Szystems
 # https://szystems.com
-# Updated: 2026-02-05
+# Updated: 2026-04-12
 
 User-agent: *
 Allow: /
@@ -10,12 +10,14 @@ Allow: /index.html
 Allow: /about.html
 Allow: /contact.html
 Allow: /portfolio.html
+Allow: /landing-services.html
 
 # Spanish pages (bilingual site)
 Allow: /index-es.html
 Allow: /about-es.html
 Allow: /contact-es.html
 Allow: /portfolio-es.html
+Allow: /landing-services-es.html
 
 # Disallow admin/config files
 Disallow: /config/
@@ -26,21 +28,8 @@ Disallow: /CREDENCIALES.md
 Disallow: /EMERGENCY_CHECKLIST.md
 Disallow: /README*.md
 Disallow: /REPORTE*.md
+Disallow: /WEBSITE-PLAN.md
 Disallow: /.htaccess*
-
-# Disallow old/legacy Spanish pages (replaced by *-es.html)
-Disallow: /contacto.html
-Disallow: /nosotros.html
-Disallow: /portafolio.html
-Disallow: /paginasweb.html
-Disallow: /appsweb.html
-Disallow: /hostingydominio.html
-Disallow: /software.html
-
-# Disallow test files
-Disallow: /test-*.html
-Disallow: /diagnostico-*.php
-Disallow: /limpiar-*.php
 
 # Sitemap location
 Sitemap: https://szystems.com/sitemap.xml
