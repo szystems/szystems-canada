@@ -1,14 +1,21 @@
-# Robots.txt for Szystems Canada
+# Robots.txt for Szystems
 # https://szystems.com
+# Updated: 2026-02-05
 
 User-agent: *
 Allow: /
 
-# Main pages
+# Main English pages
 Allow: /index.html
 Allow: /about.html
 Allow: /contact.html
 Allow: /portfolio.html
+
+# Spanish pages (bilingual site)
+Allow: /index-es.html
+Allow: /about-es.html
+Allow: /contact-es.html
+Allow: /portfolio-es.html
 
 # Disallow admin/config files
 Disallow: /config/
@@ -21,7 +28,7 @@ Disallow: /README*.md
 Disallow: /REPORTE*.md
 Disallow: /.htaccess*
 
-# Disallow Spanish pages (not for Canada market)
+# Disallow old/legacy Spanish pages (replaced by *-es.html)
 Disallow: /contacto.html
 Disallow: /nosotros.html
 Disallow: /portafolio.html

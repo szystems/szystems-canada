@@ -181,6 +181,70 @@
   animation: none;
 }
 
+/* Auto-show tooltip badge after 5s */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact-main::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: 64px;
+  background: #0880e8;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  animation: slideIn 0.4s ease 5s forwards;
+  animation-fill-mode: forwards;
+}
+
+.contact-main::before {
+  content: "";
+  position: absolute;
+  right: 58px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #0880e8;
+  opacity: 0;
+  visibility: hidden;
+  animation: slideIn 0.4s ease 5s forwards;
+}
+
+/* Make tooltip visible via animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    visibility: visible;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+/* Hide tooltip when opened or after interaction */
+#contact-toggle:checked ~ .contact-main::after,
+#contact-toggle:checked ~ .contact-main::before {
+  display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .floating-contact {

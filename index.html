@@ -4,27 +4,32 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Szystems - Web Development & Digital Solutions | Victoria BC, Canada</title>
-  <meta name="description" content="Professional web development company in Victoria BC, Canada. Custom websites, web applications, and digital solutions for businesses. Free consultation available.">
-  <meta name="keywords" content="web development Victoria BC, web design Canada, custom websites, web applications, business software, hosting, domains, Szystems, digital solutions, Vancouver Island">
+  <title>Szystems - Professional Web Development & Digital Solutions</title>
+  <meta name="description" content="Professional web development company offering custom websites, web applications, and digital solutions for businesses worldwide. Free consultation available.">
+  <meta name="keywords" content="web development, web design, custom websites, web applications, business software, hosting, domains, Szystems, digital solutions, development company">
   <meta name="author" content="Szystems">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://szystems.com/">
   
+  <!-- Hreflang for multi-language SEO -->
+  <link rel="alternate" hreflang="en" href="https://szystems.com/">
+  <link rel="alternate" hreflang="es" href="https://szystems.com/index-es.html">
+  <link rel="alternate" hreflang="x-default" href="https://szystems.com/">
+  
   <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="Szystems - Web Development & Digital Solutions | Victoria BC">
-  <meta property="og:description" content="Professional web development company in Victoria BC. Custom websites, web applications, and digital solutions for Canadian businesses.">
+  <meta property="og:title" content="Szystems - Professional Web Development & Digital Solutions">
+  <meta property="og:description" content="Professional web development company offering custom websites, web applications, and digital solutions for businesses worldwide.">
   <meta property="og:image" content="https://szystems.com/assets/img/og-image.png">
   <meta property="og:url" content="https://szystems.com/">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_CA">
+  <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Szystems">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@szaborhu">
   <meta name="twitter:title" content="Szystems - Web Development & Digital Solutions">
-  <meta name="twitter:description" content="Professional web development in Victoria BC, Canada. Custom websites and web applications.">
+  <meta name="twitter:description" content="Professional web development company offering custom websites and web applications for businesses worldwide.">
   <meta name="twitter:image" content="https://szystems.com/assets/img/og-image.png">
   
   <!-- JSON-LD Schema - Local Business -->
@@ -35,7 +40,7 @@
     "@id": "https://szystems.com/#organization",
     "name": "Szystems",
     "alternateName": "Szystems Web Development",
-    "description": "Professional web development company specializing in custom websites, web applications, and digital solutions for businesses in Victoria BC and across Canada.",
+    "description": "Professional web development company specializing in custom websites, web applications, and digital solutions for businesses worldwide.",
     "url": "https://szystems.com",
     "logo": "https://szystems.com/assets/img/logo.png",
     "image": "https://szystems.com/assets/img/og-image.png",
@@ -79,20 +84,12 @@
       "opens": "09:00",
       "closes": "17:00"
     },
-    "priceRange": "$$",
     "paymentAccepted": ["Cash", "Credit Card", "E-Transfer", "PayPal"],
-    "currenciesAccepted": "CAD",
+    "currenciesAccepted": "USD",
     "sameAs": [
       "https://www.linkedin.com/company/szystems",
       "https://wa.me/12508833223"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "47"
-    }
+    ]
   }
   </script>
   
@@ -102,46 +99,49 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Szystems",
-    "url": "https://szystems.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://szystems.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "url": "https://szystems.com"
   }
   </script>
 
   <!--meta de facebook pixel-->
   <meta name="facebook-domain-verification" content="htfc7bfrnkuz6isar2vx7q9o0zl3ht" />
+  
+  <!-- Preconnect for performance optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  
+  
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Google Fonts - optimized with display=swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- Vendor CSS Files - Critical -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Vendor CSS Files - Non-critical (loaded async) -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   
-  <!-- Optimizations CSS -->
-  <link href="assets/css/optimizations.css" rel="stylesheet">
-  
-  <!-- Canada Custom CSS -->
-  <link href="assets/css/canada-custom.css?v=20260203f" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/canada-custom.css?v=20260209d" rel="stylesheet">
 
   <!--Boton Flotante-->
   <link rel="stylesheet" href="assets/css/botonflotante.css">
-  <!--Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!--Font Awesome CDN - loaded async for performance -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
   <!-- =======================================================
   * Template Name: Szystems
@@ -149,6 +149,18 @@
   * Author: Szystems
   ======================================================== -->
 
+  <!-- Language Detection - Redirect Spanish speakers to Spanish version -->
+  <script>
+    (function() {
+      // Only redirect if user hasn't made a manual language choice
+      if (!sessionStorage.getItem('langChoice')) {
+        var userLang = navigator.language || navigator.userLanguage;
+        if (userLang && userLang.toLowerCase().startsWith('es')) {
+          window.location.replace('index-es.html');
+        }
+      }
+    })();
+  </script>
 
 <!-- Meta Pixel Code -->
 <script>
@@ -214,7 +226,7 @@
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <div class="logo"><a href="index.html"><img src="assets/img/logo.png" class="img-fluid" alt="Szystems - Web Development Victoria BC"></a></div>
+      <div class="logo"><a href="index.html"><img src="assets/img/logo.png" class="img-fluid" alt="Szystems - Professional Web Development"></a></div>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -227,6 +239,11 @@
           <li><a class="nav-link scrollto" href="about.html">About</a></li>
           <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
         </ul>
+        <div class="lang-switcher">
+          <a href="index-es.html" title="Ver en Español">
+            <span>ES</span>
+          </a>
+        </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -239,9 +256,12 @@
 
       <!-- Slide 1 -->
       <div class="carousel-item active">        <div class="carousel-container">
-          <img src="assets/img/logo.png" class="img-fluid" alt="Szystems - Professional Digital Solutions">
-          <h1 class="animate__animated animate__fadeInUp">Complete Digital Solutions for Your Business</h1>
-          <p class="animate__animated animate__fadeInDown">Transform your business with professional websites, business applications, online stores, and secure hosting. Over 15 years creating successful digital experiences for clients across Canada and worldwide.</p>
+          <picture>
+            <source srcset="assets/img/logo.webp" type="image/webp">
+            <img src="assets/img/logo.png" class="img-fluid" alt="Szystems - Professional Digital Solutions" width="300" height="100" fetchpriority="high">
+          </picture>
+          <h1 class="animate__animated animate__fadeInUp">Websites that Convert Visitors into Customers</h1>
+          <p class="animate__animated animate__fadeInDown">15+ years building high-converting sites, web apps, and online stores. 100+ projects delivered for businesses across industries.</p>
           <div class="hero-cta animate__animated animate__fadeInUp">
             <a href="#services" class="btn-get-started scrollto">View Services</a>
             <a href="contact.html" class="btn-contact">Get a Quote</a>
@@ -285,7 +305,7 @@
 
         <div class="section-title">
           <h2>Why Choose Us</h2>
-          <p>Over 15 years of experience creating successful digital solutions for businesses across Canada and internationally</p>
+          <p>Over 15 years of experience creating successful digital solutions for businesses globally and across industries</p>
         </div>
 
         <div class="row">
@@ -296,7 +316,7 @@
                 <i class="bx bx-check-shield"></i>
               </div>
               <h4>Proven Experience</h4>
-              <p>Over 100 successful projects completed. We work with businesses of all sizes, understanding the specific needs of the Canadian market.</p>
+              <p>Over 100 successful projects completed. We work with businesses of all sizes, understanding diverse market needs.</p>
             </div>
           </div>
 
@@ -306,7 +326,7 @@
                 <i class="bx bx-support"></i>
               </div>
               <h4>Dedicated Support</h4>
-              <p>Canadian-based technical team ready to help. Fast, reliable support in English and Spanish whenever you need it.</p>
+              <p>Professional technical team ready to help. Fast, reliable support in English and Spanish whenever you need it.</p>
             </div>
           </div>
 
@@ -335,35 +355,204 @@
       </div>
     </section><!-- End Why Us Section -->
 
+    <!-- ======= How We Work Section ======= -->
+    <section id="how-we-work" class="how-we-work section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>How We Work</h2>
+          <p>Clear, collaborative process so you always know what comes next</p>
+        </div>
+
+        <div class="row g-4 work-steps">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="work-step">
+              <div class="step-icon">
+                <i class="bi bi-search"></i>
+                <span class="step-number">1</span>
+              </div>
+              <h4>Discovery</h4>
+              <ul class="step-points">
+                <li>Goals, audience, and success metrics</li>
+                <li>15–20 min clarity call</li>
+                <li>Scope and priorities defined</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="work-step">
+              <div class="step-icon">
+                <i class="bi bi-pencil"></i>
+                <span class="step-number">2</span>
+              </div>
+              <h4>Design & Content</h4>
+              <ul class="step-points">
+                <li>Wireframes + copy guidance</li>
+                <li>Visual direction focused on conversion</li>
+                <li>Feedback and quick iterations</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="work-step">
+              <div class="step-icon">
+                <i class="bi bi-code-slash"></i>
+                <span class="step-number">3</span>
+              </div>
+              <h4>Build & QA</h4>
+              <ul class="step-points">
+                <li>Mobile performance and accessibility</li>
+                <li>Forms, tracking, and security</li>
+                <li>Cross-device QA before launch</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="work-step">
+              <div class="step-icon">
+                <i class="bi bi-rocket"></i>
+                <span class="step-number">4</span>
+              </div>
+              <h4>Launch & Support</h4>
+              <ul class="step-points">
+                <li>Go-live and monitoring</li>
+                <li>Analytics review and tweaks</li>
+                <li>Optional ongoing improvements</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End How We Work Section -->
+
+    <!-- ======= Featured Work Section ======= -->
+    <section id="featured-work" class="featured-work">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Featured Work</h2>
+          <p>A selection of <strong>recent projects</strong> across different industries</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <!-- Flebocenter -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="featured-card">
+              <div class="featured-img">
+                <img src="assets/img/portfolio/flebocenter.jpg" alt="Flebocenter - Medical Clinic System" loading="lazy">
+                <span class="featured-badge">Web App</span>
+              </div>
+              <div class="featured-body">
+                <h4>Flebocenter</h4>
+                <p>Medical clinic management with patient records, appointments, clinical history, and inventory tracking.</p>
+                <div class="featured-tech">
+                  <span>Laravel</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jump Xtreme Park -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="featured-card">
+              <div class="featured-img">
+                <img src="assets/img/portfolio/jumpxtremepark.jpg" alt="Jump Xtreme Park Website" loading="lazy">
+                <span class="featured-badge">Website</span>
+              </div>
+              <div class="featured-body">
+                <h4>Jump Xtreme Park</h4>
+                <p>Dynamic website for a trampoline park with activities showcase, pricing, and party booking system.</p>
+                <div class="featured-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Legally -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="featured-card">
+              <div class="featured-img">
+                <img src="assets/img/portfolio/legally.jpg" alt="Legally - Law Firm Website" loading="lazy">
+                <span class="featured-badge">Website</span>
+              </div>
+              <div class="featured-body">
+                <h4>Legally</h4>
+                <p>Professional law firm website with practice areas, attorney profiles, and consultation forms.</p>
+                <div class="featured-tech">
+                  <span>WordPress</span>
+                  <span>PHP</span>
+                  <span>CSS3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="portfolio.html" class="btn-view-all">View All Projects <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </section><!-- End Featured Work Section -->
+
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
+    <section id="clients" class="clients">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Trusted By</h2>
-          <p>Companies that have chosen us to build their digital success</p>
+          <p>Over <strong>100+ projects</strong> delivered for companies across industries</p>
         </div>
 
-        <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/casamorasan.png" class="img-fluid" alt="Casa Morasan"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clinicaselvalle.png" class="img-fluid" alt="Clinica El Valle"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/colegiosinai.png" class="img-fluid" alt="Colegio Sinai"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/comfortdreams.png" class="img-fluid" alt="Comfort Dreams"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/crediguate.png" class="img-fluid" alt="Crediguate"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/ecoalianza.png" class="img-fluid" alt="Ecoalianza"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/fumocssa.png" class="img-fluid" alt="Fumocssa"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/gasolinerasdonrolando.png" class="img-fluid" alt="Gasolineras Don Rolando"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/jirehautomotriz.png" class="img-fluid" alt="Jireh Automotriz"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/jirehinmuebles.png" class="img-fluid" alt="Jireh Inmuebles"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/jumpxtremepark.png" class="img-fluid" alt="Jump Xtreme Park"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/mapitgo.png" class="img-fluid" alt="Mapitgo"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/naturalhighlandpark.png" class="img-fluid" alt="Natural Highland Park"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/parajesdemaza.png" class="img-fluid" alt="Parajes de Maza"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/proteco.png" class="img-fluid" alt="Proteco"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/tertulianos.png" class="img-fluid" alt="Tertulianos"></div>
+        <div class="clients-marquee">
+          <div class="marquee-track">
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/casamorasan.webp" type="image/webp"><img src="assets/img/clients/casamorasan.png" alt="Casa Morasan" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/clinicaselvalle.webp" type="image/webp"><img src="assets/img/clients/clinicaselvalle.png" alt="Clinica El Valle" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/colegiosinai.webp" type="image/webp"><img src="assets/img/clients/colegiosinai.png" alt="Colegio Sinai" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/comfortdreams.webp" type="image/webp"><img src="assets/img/clients/comfortdreams.png" alt="Comfort Dreams" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/crediguate.webp" type="image/webp"><img src="assets/img/clients/crediguate.png" alt="Crediguate" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/ecoalianza.webp" type="image/webp"><img src="assets/img/clients/ecoalianza.png" alt="Ecoalianza" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/fumocssa.webp" type="image/webp"><img src="assets/img/clients/fumocssa.png" alt="Fumocssa" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/gasolinerasdonrolando.webp" type="image/webp"><img src="assets/img/clients/gasolinerasdonrolando.png" alt="Gasolineras Don Rolando" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/jirehautomotriz.webp" type="image/webp"><img src="assets/img/clients/jirehautomotriz.png" alt="Jireh Automotriz" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/jirehinmuebles.webp" type="image/webp"><img src="assets/img/clients/jirehinmuebles.png" alt="Jireh Inmuebles" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/jumpxtremepark.webp" type="image/webp"><img src="assets/img/clients/jumpxtremepark.png" alt="Jump Xtreme Park" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/mapitgo.webp" type="image/webp"><img src="assets/img/clients/mapitgo.png" alt="Mapitgo" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/naturalhighlandpark.webp" type="image/webp"><img src="assets/img/clients/naturalhighlandpark.png" alt="Natural Highland Park" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/parajesdemaza.webp" type="image/webp"><img src="assets/img/clients/parajesdemaza.png" alt="Parajes de Maza" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/proteco.webp" type="image/webp"><img src="assets/img/clients/proteco.png" alt="Proteco" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/tertulianos.webp" type="image/webp"><img src="assets/img/clients/tertulianos.png" alt="Tertulianos" loading="lazy"></picture></div>
+            <!-- Duplicate for seamless infinite scroll -->
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/casamorasan.webp" type="image/webp"><img src="assets/img/clients/casamorasan.png" alt="Casa Morasan" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/clinicaselvalle.webp" type="image/webp"><img src="assets/img/clients/clinicaselvalle.png" alt="Clinica El Valle" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/colegiosinai.webp" type="image/webp"><img src="assets/img/clients/colegiosinai.png" alt="Colegio Sinai" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/comfortdreams.webp" type="image/webp"><img src="assets/img/clients/comfortdreams.png" alt="Comfort Dreams" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/crediguate.webp" type="image/webp"><img src="assets/img/clients/crediguate.png" alt="Crediguate" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/ecoalianza.webp" type="image/webp"><img src="assets/img/clients/ecoalianza.png" alt="Ecoalianza" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/fumocssa.webp" type="image/webp"><img src="assets/img/clients/fumocssa.png" alt="Fumocssa" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/gasolinerasdonrolando.webp" type="image/webp"><img src="assets/img/clients/gasolinerasdonrolando.png" alt="Gasolineras Don Rolando" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/jirehautomotriz.webp" type="image/webp"><img src="assets/img/clients/jirehautomotriz.png" alt="Jireh Automotriz" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/jirehinmuebles.webp" type="image/webp"><img src="assets/img/clients/jirehinmuebles.png" alt="Jireh Inmuebles" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/jumpxtremepark.webp" type="image/webp"><img src="assets/img/clients/jumpxtremepark.png" alt="Jump Xtreme Park" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/mapitgo.webp" type="image/webp"><img src="assets/img/clients/mapitgo.png" alt="Mapitgo" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/naturalhighlandpark.webp" type="image/webp"><img src="assets/img/clients/naturalhighlandpark.png" alt="Natural Highland Park" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/parajesdemaza.webp" type="image/webp"><img src="assets/img/clients/parajesdemaza.png" alt="Parajes de Maza" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/proteco.webp" type="image/webp"><img src="assets/img/clients/proteco.png" alt="Proteco" loading="lazy"></picture></div>
+            <div class="marquee-item"><picture><source srcset="assets/img/clients/tertulianos.webp" type="image/webp"><img src="assets/img/clients/tertulianos.png" alt="Tertulianos" loading="lazy"></picture></div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
 
       </div>
@@ -390,13 +579,10 @@
                 <li>✓ Contact form</li>
                 <li>✓ Basic SEO optimization</li>
                 <li>✓ Google Analytics</li>
-                <li>✓ 3 months maintenance</li>
+                <li>✓ Domain (1 year included)</li>
+                <li>✓ Hosting + SSL (1 year included)</li>
               </ul>
-              <div class="price-section">
-                <div class="price-normal">$1,200 CAD</div>
-                <div class="price-tag">From $950 CAD</div>
-              </div>
-              <a href="contact.html" class="btn-service">Get Quote</a>
+              <a href="contact.html" class="btn-service">Get Your Free Quote</a>
             </div>
           </div>
 
@@ -411,13 +597,10 @@
                 <li>✓ Blog system</li>
                 <li>✓ Contact form</li>
                 <li>✓ Basic SEO</li>
-                <li>✓ 6 months maintenance</li>
+                <li>✓ Domain (1 year included)</li>
+                <li>✓ Hosting + SSL (1 year included)</li>
               </ul>
-              <div class="price-section">
-                <div class="price-normal">$2,500 CAD</div>
-                <div class="price-tag">From $1,900 CAD</div>
-              </div>
-              <a href="contact.html" class="btn-service">Get Quote</a>
+              <a href="contact.html" class="btn-service">Get Your Free Quote</a>
             </div>
           </div>
 
@@ -432,13 +615,10 @@
                 <li>✓ Advanced SEO</li>
                 <li>✓ Payment integration</li>
                 <li>✓ Blog with categories</li>
-                <li>✓ 1 year maintenance</li>
+                <li>✓ Domain (1 year included)</li>
+                <li>✓ Hosting + SSL (1 year included)</li>
               </ul>
-              <div class="price-section">
-                <div class="price-normal">$4,500 CAD</div>
-                <div class="price-tag">From $3,500 CAD</div>
-              </div>
-              <a href="contact.html" class="btn-service">Get Quote</a>
+              <a href="contact.html" class="btn-service">Get Your Free Quote</a>
             </div>
           </div>
 
@@ -453,13 +633,10 @@
                 <li>✓ Custom dashboard</li>
                 <li>✓ MySQL database</li>
                 <li>✓ Responsive design</li>
-                <li>✓ 3 months hosting</li>
+                <li>✓ Domain (1 year included)</li>
+                <li>✓ Hosting + SSL (1 year included)</li>
               </ul>
-              <div class="price-section">
-                <div class="price-normal">$3,500 CAD</div>
-                <div class="price-tag">From $2,800 CAD</div>
-              </div>
-              <a href="contact.html" class="btn-service">Get Quote</a>
+              <a href="contact.html" class="btn-service">Get Your Free Quote</a>
             </div>
           </div>
 
@@ -471,16 +648,13 @@
               <p class="description">Complex app with multiple modules, reports, and integrations.</p>
               <ul class="service-features">
                 <li>✓ 2-3 functional modules</li>
-                <li>✓ REST API included</li>
                 <li>✓ PDF reports</li>
                 <li>✓ Email integration</li>
-                <li>✓ 6 months hosting</li>
+                <li>✓ User roles system</li>
+                <li>✓ Domain (1 year included)</li>
+                <li>✓ Hosting + SSL (1 year included)</li>
               </ul>
-              <div class="price-section">
-                <div class="price-normal">$6,000 CAD</div>
-                <div class="price-tag">From $4,800 CAD</div>
-              </div>
-              <a href="contact.html" class="btn-service">Get Quote</a>
+              <a href="contact.html" class="btn-service">Get Your Free Quote</a>
             </div>
           </div>
 
@@ -492,16 +666,13 @@
               <p class="description">Robust app with integrations, scalability, and analytics.</p>
               <ul class="service-features">
                 <li>✓ 4+ complex modules</li>
-                <li>✓ Complete REST API</li>
+                <li>✓ Complete REST API + docs</li>
                 <li>✓ Third-party integrations</li>
                 <li>✓ Advanced analytics</li>
-                <li>✓ 1 year hosting</li>
+                <li>✓ Domain (1 year included)</li>
+                <li>✓ Hosting + SSL (1 year included)</li>
               </ul>
-              <div class="price-section">
-                <div class="price-normal">$10,000+ CAD</div>
-                <div class="price-tag">From $7,800 CAD</div>
-              </div>
-              <a href="contact.html" class="btn-service">Get Quote</a>
+              <a href="contact.html" class="btn-service">Get Your Free Quote</a>
             </div>
           </div>
 
@@ -527,15 +698,15 @@
               <h3><i class="bx bx-wrench" style="color: #fa8403;"></i> Maintenance</h3>
               <h4>On-Demand Support</h4>
               <ul>
-                <li><strong>Content Updates:</strong> $60/hour</li>
-                <li><strong>Bug Fixes:</strong> $75/hour</li>
-                <li><strong>Speed Optimization:</strong> $200-$400</li>
-                <li><strong>Server Migration:</strong> $300-$500</li>
-                <li><strong>New Features:</strong> $75-$150/hour</li>
+                <li><strong>Content Updates</strong></li>
+                <li><strong>Bug Fixes & Troubleshooting</strong></li>
+                <li><strong>Speed Optimization</strong></li>
+                <li><strong>Server Migration</strong></li>
+                <li><strong>New Features & Upgrades</strong></li>
                 <li>Response within 48 hours</li>
                 <li>Remote support included</li>
               </ul>
-              <a href="contact.html" class="btn-buy">Request Service</a>
+              <a href="contact.html" class="btn-buy">Get a Quote</a>
             </div>
           </div>
 
@@ -545,15 +716,14 @@
               <h3><i class="bx bx-search-alt" style="color: #fa8403;"></i> SEO & Marketing</h3>
               <h4>Boost Your Visibility</h4>
               <ul>
-                <li><strong>Complete SEO Audit:</strong> $400</li>
-                <li><strong>SEO Optimization:</strong> $600</li>
-                <li><strong>Keyword Strategy:</strong> $300</li>
-                <li><strong>Google My Business:</strong> $150</li>
-                <li><strong>Google Analytics 4:</strong> $100</li>
+                <li><strong>Complete SEO Audit</strong></li>
+                <li><strong>On-Page & Technical SEO</strong></li>
+                <li><strong>Keyword Strategy</strong></li>
+                <li><strong>Google My Business Setup</strong></li>
                 <li>Improve local search rankings</li>
                 <li>Monthly performance reports</li>
               </ul>
-              <a href="contact.html" class="btn-buy">Get Found Online</a>
+              <a href="contact.html" class="btn-buy">Get a Free Consultation</a>
             </div>
           </div>
 
@@ -563,15 +733,33 @@
               <h3><i class="bx bx-server" style="color: #fa8403;"></i> Hosting & Domain</h3>
               <h4>Reliable Infrastructure</h4>
               <ul>
-                <li><strong>Domain Registration:</strong> $45/year</li>
-                <li><strong>Shared Hosting:</strong> $25-$35/month</li>
-                <li><strong>VPS Hosting:</strong> $60-$100/month</li>
-                <li><strong>Professional Emails:</strong> $10/user/month</li>
-                <li><strong>SSL Certificate:</strong> Included Free</li>
+                <li><strong>Domain Registration & Renewal</strong></li>
+                <li><strong>Shared & VPS Hosting</strong></li>
+                <li><strong>Professional Email Setup</strong></li>
+                <li><strong>Free SSL Certificate</strong></li>
                 <li>99.9% uptime guarantee</li>
-                <li>Daily backups included</li>
+                <li>First year included in all packages</li>
+                <li>Managed hosting available</li>
               </ul>
-              <a href="contact.html" class="btn-buy">Get Hosting</a>
+              <a href="contact.html" class="btn-buy">Get a Quote</a>
+            </div>
+          </div>
+
+          <!-- REST API Add-on -->
+          <div class="col-lg-4 col-md-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="box">
+              <h3><i class="bx bx-code-curly" style="color: #fa8403;"></i> REST API</h3>
+              <h4>Add-on for Apps</h4>
+              <ul>
+                <li><strong>Custom REST API</strong></li>
+                <li>5-10+ endpoints</li>
+                <li>JWT authentication</li>
+                <li>Full documentation</li>
+                <li>JSON responses</li>
+                <li>Rate limiting included</li>
+                <li>Perfect add-on for any Web App</li>
+              </ul>
+              <a href="contact.html" class="btn-buy">Get a Quote</a>
             </div>
           </div>
 
@@ -580,10 +768,10 @@
         <div class="row mt-5">
           <div class="col-lg-12 text-center">
             <p style="font-size: 16px; color: #444;">
-              <strong>💡 Startup Special:</strong> All website packages include 1 year free domain and SSL certificate
+              <strong>💡 All Inclusive:</strong> Every package includes domain registration, hosting, and SSL certificate for 1 year
             </p>
             <p style="font-size: 14px; color: #888; margin-top: 15px;">
-              All prices in Canadian Dollars (CAD). Custom packages available upon request. Contact us for a free consultation.
+              Custom packages available upon request. <a href="contact.html" style="color: #0880e8; font-weight: 600;">Contact us for a free consultation →</a>
             </p>
           </div>
         </div>
@@ -602,7 +790,10 @@
 
           <!-- Column 1: Brand -->
           <div class="col-lg-4 col-md-6 footer-info">
-            <img src="assets/img/logoblanco.png" class="img-fluid footer-logo" alt="Szystems">
+            <picture>
+              <source srcset="assets/img/logoblanco.webp" type="image/webp">
+              <img src="assets/img/logoblanco.png" class="img-fluid footer-logo" alt="Szystems" loading="lazy">
+            </picture>
             <p class="footer-tagline">
               Professional web development and custom software solutions. 
               Helping businesses succeed in the digital world since 2010.
@@ -696,7 +887,7 @@
 				<i class="bi bi-whatsapp"></i>
 			</a>
 		</div>
-		<label for="contact-toggle" class="contact-main" title="Contact Us">
+		<label for="contact-toggle" class="contact-main" title="Contact Us" data-tooltip="Chat with us!">
 			<i class="bi bi-headset"></i>
 			<i class="bi bi-x-lg"></i>
 		</label>
@@ -707,20 +898,29 @@
 
   
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- Vendor JS Files - with defer for performance -->
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>  <!-- Template Main JS File -->
+  <script src="assets/js/main.js" defer></script>
   
   <!-- Szystems Optimized JS -->
-  <script src="assets/js/szystems.js"></script>
-  
-  <!-- Szystems Design Fixes -->
-  <script src="assets/js/design-fixes.js"></script>
+  <script src="assets/js/szystems.js" defer></script>
+
+  <!-- Language Preference Handler -->
+  <script>
+    document.querySelectorAll('.lang-switcher a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        sessionStorage.setItem('langChoice', 'manual');
+      });
+    });
+  </script>
+
+  <!-- Click Tracking (GA4 + FB Pixel) -->
+  <script defer src="assets/js/tracking.js"></script>
 
 </body>
 

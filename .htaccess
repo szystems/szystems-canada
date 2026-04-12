@@ -1,37 +1,27 @@
-# Szystems Canada - iPage Compatible
+# Szystems Canada - iPage Minimal Safe Version
 # February 2026
 
-# Default index file
 DirectoryIndex index.html index.php
 
-# Disable directory listing
-Options -Indexes
-
-# Custom Error Pages
 ErrorDocument 404 /404.html
 
-# HTTPS Redirect
+<IfModule mod_rewrite.c>
 RewriteEngine On
+
+# HTTPS Redirect
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# GZIP Compression
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript
+# 301 Redirects: Old Guatemala pages to new EN pages
+RewriteRule ^contacto\.html$ /contact.html [R=301,L]
+RewriteRule ^nosotros\.html$ /about.html [R=301,L]
+RewriteRule ^portafolio\.html$ /portfolio.html [R=301,L]
+RewriteRule ^paginasweb\.html$ /index.html [R=301,L]
+RewriteRule ^software\.html$ /index.html [R=301,L]
+RewriteRule ^appsweb\.html$ /index.html [R=301,L]
+RewriteRule ^hostingydominio\.html$ /index.html [R=301,L]
+RewriteRule ^blog\.html$ /index.html [R=301,L]
+RewriteRule ^blog-single\.html$ /index.html [R=301,L]
+RewriteRule ^test\.html$ /index.html [R=301,L]
+RewriteRule ^test-services\.html$ /index.html [R=301,L]
 </IfModule>
-
-# Browser Caching
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
-    ExpiresByType image/gif "access plus 1 year"
-    ExpiresByType image/webp "access plus 1 year"
-    ExpiresByType text/css "access plus 1 month"
-    ExpiresByType application/javascript "access plus 1 month"
-</IfModule>
-
-# Block access to sensitive files
-<FilesMatch "\.(md|env|bak)$">
-    Require all denied
-</FilesMatch>

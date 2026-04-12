@@ -125,6 +125,9 @@ $company = isset($_POST['company']) ? sanitize_input($_POST['company']) : 'Not p
 $budget = isset($_POST['budget']) ? sanitize_input($_POST['budget']) : 'Not specified';
 $timeline = isset($_POST['timeline']) ? sanitize_input($_POST['timeline']) : 'Not specified';
 $referral = isset($_POST['referral']) ? sanitize_input($_POST['referral']) : 'Not specified';
+$meeting = isset($_POST['meeting']) ? sanitize_input($_POST['meeting']) : 'Not specified';
+$meeting_time = isset($_POST['meeting_time']) ? sanitize_input($_POST['meeting_time']) : 'Not specified';
+$lead_source = isset($_POST['lead_source']) ? sanitize_input($_POST['lead_source']) : 'Not specified';
 
 // Validation
 if (empty($name)) {
@@ -221,6 +224,9 @@ $message
 📊 ADDITIONAL INFO
 ───────────────────────────────────────────────────
 How they found us: $referral_display
+Lead source:       $lead_source
+Wants a call:      $meeting
+Best time:         $meeting_time
 Submitted:         " . date('F j, Y \a\t g:i A T') . "
 IP Address:        " . $_SERVER['REMOTE_ADDR'] . "
 

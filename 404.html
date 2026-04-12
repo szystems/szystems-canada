@@ -19,6 +19,23 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1009456926381904');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1009456926381904&ev=PageView&noscript=1"
+  /></noscript>  <!-- End Meta Pixel Code -->
+
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVPQNLC9LC"></script>
   <script>
@@ -120,19 +137,63 @@
       margin-top: 40px;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 15px;
       flex-wrap: wrap;
     }
     
     .links a {
-      color: rgba(255, 255, 255, 0.6);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
       text-decoration: none;
       font-size: 14px;
-      transition: color 0.3s ease;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.3s ease;
     }
     
     .links a:hover {
+      background: rgba(8, 128, 232, 0.3);
+      border-color: var(--blue);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .links a i {
+      font-size: 16px;
       color: var(--orange);
+    }
+
+    .mini-cta {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mini-cta p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .mini-cta a {
+      color: var(--orange);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .mini-cta a:hover {
+      color: #ffb347;
+    }
+
+    .mini-cta a i {
+      margin-right: 5px;
     }
     
     /* Decorative elements */
@@ -223,11 +284,22 @@
     </a>
     
     <div class="links">
-      <a href="portfolio.html">Our Work</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html#services"><i class="bi bi-grid"></i> Services</a>
+      <a href="portfolio.html"><i class="bi bi-collection"></i> Our Work</a>
+      <a href="about.html"><i class="bi bi-people"></i> About Us</a>
+      <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+    </div>
+
+    <div class="mini-cta">
+      <p>Need help finding something?</p>
+      <a href="https://wa.me/12508833223" target="_blank"><i class="bi bi-whatsapp"></i> Chat on WhatsApp</a>
+      &nbsp;&middot;&nbsp;
+      <a href="mailto:info@szystems.com"><i class="bi bi-envelope"></i> Email Us</a>
     </div>
   </div>
+
+  <!-- Click Tracking (GA4 + FB Pixel) -->
+  <script defer src="assets/js/tracking.js"></script>
 
 </body>
 
