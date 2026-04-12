@@ -429,6 +429,11 @@
   margin-bottom: 0;
 }
 
+/* Hide reCAPTCHA v3 badge (text disclosure added in footer per Google TOS) */
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
 /* Trust Signals Section */
 .trust-signals {
   padding: 40px 0;
