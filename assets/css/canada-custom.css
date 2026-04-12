@@ -1,6 +1,50 @@
 /* Szystems Canada Custom Styles */
 
 /* ============================================
+   CLIENT PORTAL NAV BUTTON (pill/outline)
+   ============================================ */
+
+.navbar .nav-portal > a {
+  border: 2px solid #f6b024;
+  border-radius: 50px;
+  padding: 6px 18px !important;
+  color: #f6b024 !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.navbar .nav-portal > a:hover {
+  background: #f6b024;
+  color: #032e54 !important;
+}
+.navbar .nav-portal > a i.bi-lock-fill {
+  font-size: 12px;
+  margin-right: 4px;
+}
+.navbar .nav-portal .dropdown ul {
+  min-width: 220px;
+}
+.navbar .nav-portal .dropdown ul a i {
+  margin-right: 6px;
+  color: #0880e8;
+}
+
+/* Portal pill in mobile nav */
+.navbar-mobile .nav-portal > a {
+  border: 2px solid #f6b024;
+  border-radius: 50px;
+  padding: 8px 20px !important;
+  margin: 10px 15px;
+  display: inline-block;
+  color: #f6b024 !important;
+  font-weight: 600;
+  text-align: center;
+}
+.navbar-mobile .nav-portal > a:hover {
+  background: #f6b024;
+  color: #032e54 !important;
+}
+
+/* ============================================
    LANGUAGE SWITCHER STYLES
    ============================================ */
 
