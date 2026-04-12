@@ -481,6 +481,16 @@
   margin-right: 6px;
 }
 
+/* Portal CTA Card (landing pages) */
+.portal-cta-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 48px 32px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
 @media (max-width: 991px) {
   .how-we-work .work-step {
     text-align: left;

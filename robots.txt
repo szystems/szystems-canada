@@ -29,6 +29,9 @@ Disallow: /EMERGENCY_CHECKLIST.md
 Disallow: /README*.md
 Disallow: /REPORTE*.md
 Disallow: /WEBSITE-PLAN.md
+Disallow: /MEJORAS-SITIO.md
+Disallow: /server-structure-guide.md
+Disallow: /changelog.txt
 Disallow: /.htaccess*
 
 # Sitemap location
