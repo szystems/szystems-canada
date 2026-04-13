@@ -1014,7 +1014,7 @@ section .icon i {
 }
 
 .pricing .box {
-  padding: 40px 20px;
+  padding: 30px 16px;
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -1022,37 +1022,44 @@ section .icon i {
   background: #fff;
   box-shadow: 0px 5px 30px 0px rgba(82, 63, 105, 0.1);
   transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing .box .btn-buy {
+  margin-top: auto;
 }
 
 .pricing .box:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 0px 10px 40px 0px rgba(82, 63, 105, 0.2);
 }
 
 .pricing h3 {
   font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
   color: #032e54;
 }
 
 .pricing h4 {
-  font-size: 42px;
+  font-size: 22px;
   color: #0880e8;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
+  font-size: 14px;
+  top: -8px;
+  left: -2px;
 }
 
 .pricing h4 span {
   color: #bababa;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 300;
 }
 
@@ -1061,12 +1068,12 @@ section .icon i {
   list-style: none;
   color: #444444;
   text-align: center;
-  line-height: 20px;
-  font-size: 14px;
+  line-height: 18px;
+  font-size: 13px;
 }
 
 .pricing ul li {
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 }
 
 .pricing ul i {
