@@ -1,0 +1,12 @@
+# Credentials and config (NEVER commit)
+config/ftp.conf
+config/email_config.php
+config/analytics_config.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
