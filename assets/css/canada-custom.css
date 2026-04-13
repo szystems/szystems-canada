@@ -20,12 +20,21 @@
   font-size: 12px;
   margin-right: 4px;
 }
-.navbar .nav-portal .dropdown ul {
-  min-width: 220px;
+.navbar .nav-portal > ul {
+  min-width: 200px;
 }
-.navbar .nav-portal .dropdown ul a i {
-  margin-right: 6px;
+.navbar .nav-portal > ul a {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.navbar .nav-portal > ul a i {
   color: #0880e8;
+  font-size: 14px;
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 /* Portal pill in mobile nav */
@@ -316,10 +325,10 @@
   border: 2px solid #fa8403 !important;
   color: #ffffff !important;
   box-shadow: 0 4px 15px rgba(250, 132, 3, 0.4);
-  padding: 12px 32px !important;
+  padding: 14px 36px !important;
   border-radius: 50px !important;
-  font-weight: 500 !important;
-  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s ease !important;
